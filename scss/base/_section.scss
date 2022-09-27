@@ -1,0 +1,7 @@
+.section {
+    padding-bottom: 94px;
+}
+
+.section:not(.work) {
+    padding-top: 94px;
+}
