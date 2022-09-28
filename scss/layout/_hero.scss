@@ -64,7 +64,7 @@ screen
 		font-weight: 900;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
-		width: 360px;
+
 		margin-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
@@ -73,6 +73,9 @@ screen
 		text-align: center;
 		letter-spacing: 0.06em;
 
+		@media screen and (min-width: 480px) {
+			width: 360px;
+		}
 		@media screen and (min-width: 1200px) {
 			font-size: 44px;
 			line-height: 1.36;

@@ -2,10 +2,17 @@
 	&__list {
 		display: flex;
 		gap: 30px;
+		flex-wrap: wrap;
 	}
 
 	&__item {
-		width: 170px;
+		width: calc((100% - 30px) / 2);
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 60px) / 3);
+		}
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 150px) / 6);
+		}
 		height: 92px;
 	}
 
