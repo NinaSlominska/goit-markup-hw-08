@@ -31,16 +31,18 @@
 						<li><a href="#" class="link menu__link">Контакти</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="page-header__mobile-btn">
-					<svg class="page-header__open-icon"><use href="images/sprite.svg#icon-burger"</svg>
+				<button type="button" class="page-header__mobile-btn js-open-menu">
+					<svg class="page-header__open-icon">
+						<use href="images/sprite.svg#icon-burger">
+
+					</svg>
 				</button>
 				<ul class="header-contact list">
 					<li>
-						<a href="mailto:info@devstudio.com" class="link header-contact__link"
-							><svg aria-label="піктограма поштового конверта" class="header-img" width="16" height="12">
-								<use href="./images/sprite.svg#icon-envelope"></use></svg
-							>info@devstudio.com</a
-						>
+						<a href="mailto:info@devstudio.com" class="link header-contact__link"><svg aria-label="піктограма поштового конверта" class="header-img" width="16" height="12">
+								<use href="./images/sprite.svg#icon-envelope"></use>
+								</svg>info@devstudio.com
+								</a>
 					</li>
 					<li>
 						<a href="tel:+380961111111" class="link header-contact__link"
@@ -51,9 +53,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="mobile-menu">
+			<div class="mobile-menu js-menu-container">
 				<div class="mobile-menu__container">
-					<button class="mobile-menu__close-btn">
+					<button class="mobile-menu__close-btn js-close-menu">
 						<svg class="mobile-menu__close-icon">
 							<use href="./images/sprite.svg#icon-close_mobile"></use>
 						</svg>
@@ -693,5 +695,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
