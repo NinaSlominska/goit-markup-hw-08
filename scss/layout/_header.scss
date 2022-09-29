@@ -24,8 +24,8 @@
 .page-header__container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	position: inherit;
+	justify-content: space-between;
+	// position: inherit;
 }
 
 @media screen and (min-width: 768px) {
