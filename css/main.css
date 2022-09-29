@@ -915,7 +915,6 @@ button {
   margin-right: auto;
   margin-right: auto;
   text-align: center;
-  gap: 20px;
 }
 @media screen and (min-width: 1200px) {
   .form-footer__container {
