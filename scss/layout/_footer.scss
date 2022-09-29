@@ -4,15 +4,44 @@
 	padding-bottom: 60px;
 	&__container {
 		display: flex;
-		align-items: baseline;
+		flex-direction: column;
+		row-gap: 60px;
+
+		@media screen and (min-width: 768px) {
+			align-items: baseline;
+			flex-direction: row;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		// @media screen and (min-width: 1200px) {
+		// 	align-items: baseline;
+		// 	flex-direction: row;
+		// 	flex-wrap: nowrap;
+		// }
 	}
+
 	&__title {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 		margin-bottom: 20px;
+		@media screen and (min-width: 1200px) {
+			text-align: left;
+		}
+
 		color: var(--title-text-color);
 	}
 	&__social {
 		fill: var(--title-text-color);
 		background-color: rgba(255, 255, 255, 0.1);
+	}
+}
+.footer-address__container {
+	text-align: center;
+	@media screen and (min-width: 1200px) {
+		text-align: left;
 	}
 }
 
@@ -21,10 +50,16 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.71;
-	margin-right: 70px;
 	li + li {
-		margin-top: 9px;
+		margin-top: 8px;
 	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 70px;
+		li + li {
+			margin-top: 9px;
+		}
+	}
+
 	&__link {
 		color: var(--title-text-color);
 		transition: color var(--animation);
@@ -42,17 +77,42 @@
 		}
 	}
 }
+// .form-footer__label {
+// 	display: block;
+// 	width: 100%;
+// }
 
 .form-footer {
-	margin-left: auto;
+	// width: 100%;
+	@media screen and (min-width: 1200px) {
+		margin-left: auto;
+	}
 	&__container {
+		// width: 100%;
 		display: flex;
-		gap: 12px;
+		align-items: center;
+
+		flex-direction: column;
+		gap: 20px;
+
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+			gap: 12px;
+			margin-left: auto;
+		}
 	}
 	&__input {
 		font-size: 16px;
 		line-height: 1.25;
-		width: 358px;
+		display: block;
+
+		@media screen and (min-width: 480px) and (max-width: 1199px) {
+			width: 450px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 358px;
+		}
+
 		height: 50px;
 		padding: 15px 16px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
@@ -70,10 +130,11 @@
 		}
 	}
 	&__button {
+		width: 200px;
 		padding: 10px 28px;
 		display: flex;
 		justify-content: center;
-		text-align: none;
+		// text-align: none;
 		gap: 10px;
 		margin-right: 0;
 		margin-left: 0;
